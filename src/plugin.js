@@ -13,7 +13,7 @@
 	////////////////////////////////////////////
 
 	const PLUGIN_VERSION = "1.0.0.0";
-	const PLUGIN_CATEGORY = "general";
+	const PLUGIN_CATEGORY = "form-controls";
 
 	const PLUGIN_CLASS = SDK.Plugins.StraniAnelli_Showdown = class ShowdownPlugin extends SDK.IPluginBase
 	{
