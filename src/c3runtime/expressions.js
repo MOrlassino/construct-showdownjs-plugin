@@ -5,7 +5,8 @@
 	{
 		MakeHtml(text) {
 			const converter = new showdown.Converter();
-      const html = converter.makeHtml(text);
+			const t = !text ? " " : text;
+			const html = converter.makeHtml(text);
 			return html;
 		}
 	};

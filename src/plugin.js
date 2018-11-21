@@ -12,7 +12,7 @@
 	const PLUGIN_ID = "StraniAnelli_Showdown";
 	////////////////////////////////////////////
 
-	const PLUGIN_VERSION = "1.0.0.0";
+	const PLUGIN_VERSION = "1.0.2.0";
 	const PLUGIN_CATEGORY = "form-controls";
 
 	const PLUGIN_CLASS = SDK.Plugins.StraniAnelli_Showdown = class ShowdownPlugin extends SDK.IPluginBase
@@ -34,9 +34,14 @@
 			// Support both the C2 and C3 runtimes
 			this._info.SetSupportedRuntimes(["c3"]);
 
+			// this._info.AddFileDependency({
+			// 	filename: "c3runtime/showdown.min.js",
+			// 	type: "inline-script"
+			// });
+
 			this._info.AddFileDependency({
-				filename: "c3runtime/showdown.min.js",
-				type: "inline-script"
+				filename: "showdown.js",
+				type: "external-script"
 			});
 
 			SDK.Lang.PushContext(".properties");
